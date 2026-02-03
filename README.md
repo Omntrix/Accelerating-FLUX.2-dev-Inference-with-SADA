@@ -9,10 +9,10 @@ This repository implements the **SADA: Stability-guided Adaptive Diffusion Accel
 
 In our tests, Flux2-SADA reduces inference latency by **33%**.
 
-| Implementation | Latency (Per Image) | Speedup | GPU | Resolution |
-| :--- | :--- | :--- | :--- | :--- |
-| **FLUX.2 (dev)** | 18.0s | 1.0x |  H200  | 1024x1024 |
-| **FLUX.2 + SADA** | **12.0s** | **1.5x (🚀)** | H200 | 1024x1024 |
+| Implementation | Latency (Per Image) | Speedup | GPU | Resolution | Preview |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **FLUX.2 (dev)** | 18.0s | 1.0x | H200 | 1024x1024 | ![Baseline](assets/baseline.png) |
+| **FLUX.2 + SADA** | **12.0s** | **1.5x (🚀)** | H200 | 1024x1024 | ![SADA](assets/sada_result.png) |
 
 *Note: Benchmarks were conducted with 30 inference steps and BF16 precision. Results may vary depending on hardware and parameters.*
 
